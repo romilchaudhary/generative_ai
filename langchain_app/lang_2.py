@@ -2,7 +2,7 @@ import os
 import streamlit as st
 
 # Use the LangChain Ollama wrapper
-# Install: pip install streamlit langchain-ollama
+# Install: pip install streamlit langchain_community
 # Also make sure Ollama daemon is running and the phi3 model is available locally.
 from langchain_community.llms import Ollama
 
