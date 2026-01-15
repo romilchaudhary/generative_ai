@@ -54,7 +54,13 @@ if st.session_state.llm is None:
 # Input form to submit user message
 with st.form("user_input_form", clear_on_submit=True):
     user_input = st.text_input("Your message", "")
-    submit = st.form_submit_button("Send")
+    cols = st.columns(2)
+    submit = cols[0].form_submit_button("Send")
+    clear = cols[1].form_submit_button("Clear Chat history")
+
+if clear:
+    st.session_state.history = []
+    st.stop()
 
 if submit and user_input:
     # Build a simple conversational prompt that includes prior turns

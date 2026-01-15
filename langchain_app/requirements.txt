@@ -1,2 +1,10 @@
 streamlit
 langchain_community
+langchain
+chromadb
+langchain_text_splitters
+langchain_core
+langchain_classic
+ollama
+# Note: package names and availability may differ by environment; some imports (langchain_community, ollama)
+# come from community wrappers. If you use the Ollama client directly, ensure it's installed per Ollama docs.
