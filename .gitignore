@@ -5,4 +5,5 @@ __pycache__/
 *.pyd
 *.db
 *.sqlite3
-venv_fastapi/
+venv_new/
+.env
